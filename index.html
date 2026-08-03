@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فرم ثبت‌نام دانشجویان</title>
+    <!-- لینک فایل CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>📋 فرم ثبت‌نام دانشجو</h1>
+        <p>لطفاً اطلاعات خود را دقیق وارد کنید.</p>
+
+        <!-- فرم ثبت‌نام -->
+        <form id="registrationForm">
+            <!-- فیلد نام -->
+            <div class="form-group">
+                <label for="firstName">نام:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="مثال: علی" required>
+            </div>
+
+            <!-- فیلد نام خانوادگی -->
+            <div class="form-group">
+                <label for="lastName">نام خانوادگی:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="مثال: محمدی" required>
+            </div>
+
+            <!-- فیلد کد دانشجویی -->
+            <div class="form-group">
+                <label for="studentId">کد دانشجویی:</label>
+                <input type="text" id="studentId" name="studentId" placeholder="مثال: ۹۸۲۳۴۵۶۷" required>
+            </div>
+
+            <!-- فیلد ایمیل -->
+            <div class="form-group">
+                <label for="email">ایمیل:</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+            </div>
+
+            <!-- فیلد شماره تلفن -->
+            <div class="form-group">
+                <label for="phone">شماره تلفن:</label>
+                <input type="tel" id="phone" name="phone" placeholder="مثال: ۰۹۱۲۳۴۵۶۷۸۹" required>
+            </div>
+
+            <!-- فیلد رشته تحصیلی -->
+            <div class="form-group">
+                <label for="major">رشته تحصیلی:</label>
+                <select id="major" name="major" required>
+                    <option value="">انتخاب کنید...</option>
+                    <option value="مهندسی کامپیوتر">مهندسی کامپیوتر</option>
+                    <option value="مهندسی برق">مهندسی برق</option>
+                    <option value="مهندسی مکانیک">مهندسی مکانیک</option>
+                    <option value="مهندسی عمران">مهندسی عمران</option>
+                    <option value="پزشکی">پزشکی</option>
+                    <option value="مدیریت">مدیریت</option>
+                    <option value="حقوق">حقوق</option>
+                    <option value="سایر">سایر</option>
+                </select>
+            </div>
+
+            <!-- دکمه ارسال -->
+            <button type="submit" id="submitBtn">ثبت‌نام</button>
+
+            <!-- نمایش پیام وضعیت -->
+            <div id="formMessage" class="message"></div>
+        </form>
+    </div>
+
+    <!-- لینک فایل JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
